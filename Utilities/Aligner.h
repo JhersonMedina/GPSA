@@ -1,5 +1,5 @@
-#include "AlignmentInformation.h"
-#include "AlignmentResults.h"
+#include "../Entities/AlignmentInformation.h"
+#include "../Entities/AlignmentResults.h"
 #include <vector>
 
 #pragma once

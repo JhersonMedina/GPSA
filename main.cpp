@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Aligner.h"
-#include "AlignmentResults.h"
-#include "Parser.h"
+#include "Utilities/Aligner.h"
+#include "Entities/AlignmentResults.h"
+#include "Utilities/Parser.h"
 
 using namespace std;
 
