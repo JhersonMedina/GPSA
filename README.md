@@ -31,3 +31,9 @@ GATTACA
 ```
 
 Where score is the overall score of the alignment and the alignments are the resulting alignment for each sequence.
+
+# Further work and next steps
+
+Right now I'm working on making this a CLI application and in future itereations I expect to inlcude PAM and BLOSUM matrixes as part of the cost.
+
+Beyond that, extend this to multiple sequence alignments although that must require different approaches.
