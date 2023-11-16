@@ -21,11 +21,8 @@ vector<vector<double>> bestAlingment;
 vector<vector<bool>> memoized;
 
 double findBestAlignmentScore(int, int);
+double getMatchCost(char, char);
 pair<string, string> buildBestAlignment(int, int);
-
-double getMatchCost(char firstNucleotide, char secondNucleotide) {
-    return firstNucleotide == secondNucleotide ? matchCost : missMatchCost;
-}
 
 AlignmentResults getBestAlingment(AlignmentInformation alingmentInformation) {
     firstSequence = alingmentInformation.firstSequence;
@@ -100,4 +97,8 @@ double findBestAlignmentScore (int firstSequencePosition, int secondSequencePosi
 
     memoized[firstSequencePosition][secondSequencePosition] = true;
     return bestAlingment[firstSequencePosition][secondSequencePosition];
+}
+
+double getMatchCost(char firstNucleotide, char secondNucleotide) {
+    return firstNucleotide == secondNucleotide ? matchCost : missMatchCost;
 }
