@@ -1,11 +1,11 @@
 # Global Pairwise Sequence Aligner
 
-This is the C++ implementation of de well-known global sequence aligner algorithm using dynamica programing.
+This is the C++ implementation of de well-known global sequence aligner algorithm using dynamic programing.
 
 # Usage
 
-To use you must have C++ intalled on yur computer.
-Simply comile with 
+To use you must have C++ installed on your computer.
+Simply compile with 
 
 ```
 g++ main -o main
