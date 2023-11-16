@@ -11,7 +11,7 @@ using namespace std;
 const double WORST_SCORE = 1e18;
 
 double matchCost;
-double missMatchCost;
+double misMatchCost;
 double indelCost;
 
 string firstSequence;
@@ -30,7 +30,7 @@ AlignmentResults getBestAlingment(AlignmentInformation alingmentInformation) {
 
 
     matchCost = alingmentInformation.matchCost;
-    missMatchCost = alingmentInformation.missMatchCost;
+    misMatchCost = alingmentInformation.missMatchCost;
 
     indelCost = alingmentInformation.indelCost;
 
@@ -100,5 +100,5 @@ double findBestAlignmentScore (int firstSequencePosition, int secondSequencePosi
 }
 
 double getMatchCost(char firstNucleotide, char secondNucleotide) {
-    return firstNucleotide == secondNucleotide ? matchCost : missMatchCost;
+    return firstNucleotide == secondNucleotide ? matchCost : misMatchCost;
 }
